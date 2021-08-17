@@ -1,0 +1,67 @@
+---
+title: "Perfomance Ranking Report"
+thanks: "**Issue date**: `r format(Sys.time(), '%B %d, %Y')`; "
+author:   "_"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: pdf_document
+
+header-includes:
+  - \usepackage{titling}
+  - \posttitle{\end{center}}
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# REPORT PERSONS DETAILS\
+
+```{r ,include=FALSE} 
+name_u = name_u()
+company_name = company_name() 
+fund_name = fund_name()
+subject_name = subject_name()
+title = title() 
+email = email()
+```
+
+Individual Information | 
+------------- | -------------
+Project Name | `r name_u`
+Company Name | `r company_name`
+Fund Name     | `r fund_name`
+Subject Name | `r subject_name`
+Title        | `r title`
+Email Address | `r email`
+
+# ARCHETYPE\
+
+```{r ,include=FALSE} 
+text_1 = text_1()
+text_2 = text_2() 
+text_4 = text_4()
+```
+
+`r text_1``r text_2``r text_4`  
+
+# KOLBE\
+ 
+```{r ,include=FALSE} 
+text_5 = text_5() 
+text_6 = text_6() 
+text_7 = text_7() 
+text_8 = text_8()
+text_9 = text_9() 
+```
+
+`r text_5``r text_6``r text_7``r text_8`
+
+# KANTO\
+
+```{r ,include=FALSE} 
+text_10 = text_10()  
+text_11 = text_11()  
+text_12 = text_12()  
+```
+`r text_10``r text_11``r text_12`
