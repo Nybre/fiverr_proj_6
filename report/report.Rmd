@@ -1,4 +1,4 @@
----
+ ---
 title: "Perfomance Ranking Report"
 thanks: "**Issue date**: `r format(Sys.time(), '%B %d, %Y')`; "
 author:   "_"
@@ -22,7 +22,8 @@ name_u = name_u()
 company_name = company_name() 
 fund_name = fund_name()
 subject_name = subject_name()
-title = title() 
+name_usr = name_usr() 
+name_sur = name_sur() 
 email = email()
 ```
 
@@ -32,21 +33,27 @@ Project Name | `r name_u`
 Company Name | `r company_name`
 Fund Name     | `r fund_name`
 Subject Name | `r subject_name`
-Title        | `r title`
+First Name | `r name_usr`
+Last Name | `r name_sur`
 Email Address | `r email`
 
 # ARCHETYPE\
 
 ```{r ,include=FALSE} 
 text_1 = text_1()
+text_1_a = text_1_a()
+text_1_b = text_1_b()
 text_2 = text_2() 
 text_4 = text_4()
 ```
 
-`r text_1``r text_2``r text_4`  
+`r text_1`  
+`r text_1_a`  
+`r text_1_b`\
+`r text_2``r text_4`  
 
 # KOLBE\
- 
+
 ```{r ,include=FALSE} 
 text_5 = text_5() 
 text_6 = text_6() 
